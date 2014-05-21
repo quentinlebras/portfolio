@@ -1,6 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
 source 'http://rubygems.org'
+source 'https://rails-assets.org'
 
 gem "middleman", "~>3.3.2"
 
@@ -15,3 +16,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # Deploy GitHub
 gem "middleman-deploy", "~> 0.2.3"
+
+# Foundation
+gem "rails-assets-foundation", "~> 5.2.2", require: false
