@@ -1,0 +1,40 @@
+.thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(239,255,90,0);
+  @include transition (background-color 0.2s ease-out);
+
+  .n-t-table {
+    display: table;
+    height: 100%;
+    width: 100%
+  }
+  .n-t-content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .n-t-title {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    opacity: 0;
+  }
+  .n-t-date {
+    color: white;
+    opacity: 0;
+  }
+
+  &:hover {
+    background-color: rgba(239,255,90,0.6);
+    @include transition (all 0.2s ease-out);
+    .n-t-date, .n-t-title {
+      margin-top: 0px;
+      opacity: 1;
+      @include transition (all 0.5s ease-out);
+    }
+  }
+
+}
